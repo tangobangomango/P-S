@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------------------------- 
+Theme Name:   divi-passportsandspice-child 
+Theme URI:     
+Description:  Child theme for Passports and Spice website, built on Divi 
+Author:       Ed Katzman 
+Author URI:    
+Template:     Divi 
+Version:      1.0.0 
+License:      GNU General Public License v2 or later 
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+------------------------------ ADDITIONAL CSS HERE ------------------------------*/
+/*Improve post title spacing */
+
+.ps-post-body-section-title {
+    padding: 10px 0px 0px 0px;
+}
+/*Override global link color for home page blog post titles */
+
+.ps-home-page-post-link a {
+    color: #666666;
+}
+/* Make home page blog images larger and closer together */
+/*.et_pb_gutters3 .et_pb_column_4_4 .ps-front-page-blog .et_pb_blog_grid  .column.size-1of3 {	width: 32%;	margin-right: 2%;}*/
+
+.et_pb_column_4_4 .ps-front-page-blog .et_pb_blog_grid .column.size-1of3,
+.et_pb_column_4_4 .ps-category-page-blog .et_pb_blog_grid .column.size-1of3 {
+    width: 32%;
+    margin-right: 2%;
+}
+/*Hide post content on front page and custom category pages*/
+
+.ps-front-page-blog .post-content,
+.ps-category-page-blog .post-content {
+    display: none;
+}
+
+.ps-front-page-blog .et_pb_post,
+.ps-category-page-blog .et_pb_post {
+    margin-bottom: 0 !important;
+}
+/*Provide line space for multiline title */
+
+.ps-front-page-blog .entry-title,
+.ps-category-page-blog .entry-title {
+    line-height: 1.2em;
+}
+
+.et_pb_section.ps-title-below-section {
+    padding-bottom: 20px;
+}
+/*Make photos larger on home page by making section and row wider */
+
+.et_pb_section.ps-home-page-blog-photo-section {
+    max-width: 100%;
+}
+
+.et_pb_row.ps-home-page-blog-photo-row {
+    max-width: 1200px;
+}
+/* Adjust and vertically center title in row */
+
+.et_pb_row.ps-home-page-heading-row {
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+/* STYLE IF USE STANDARD EDITOR */
+/* After moving title below in single.php, provide space under image. */
+
+.et_post_meta_wrapper h1.entry-title {
+    margin-top: 20px;
+    line-height: 1.3;
+}
+
+/*pullquotes css; from https://www.elegantthemes.com/blog/divi-resources/how-to-add-pull-quotes-to-divi-posts-and-pages-with-5-different-styles*/
+ 
+/*Pull quote text styling*/
+blockquote.et-pullquote p {
+font-size: 22px;
+line-height: 35px;
+font-style: italic;
+letter-spacing: 1px;
+color: #666;
+font-weight: 300;
+}
+ 
+/*Pull quotes with open quotation mark*/
+ 
+blockquote.et-pullquote.left.quote, blockquote.et-pullquote.right.quote{
+position: relative;
+border-left: none;
+}
+ 
+blockquote.et-pullquote.left.quote:before {
+    content: "\201C";
+    font-size: 75px;
+    position: absolute;
+    top: 10px;
+    left: -16px;
+    font-family: lato;
+    color: #f4842e;
+}
+ 
+blockquote.et-pullquote.right.quote:before {
+    content: "\201C";
+    font-size: 75px;
+    position: absolute;
+    top: 10px;
+    left: -16px;
+    font-family: lato;
+    color: #888;
+}
+ 
+/*Pull quotes with top border*/
+blockquote.et-pullquote.left.topborder, blockquote.et-pullquote.right.topborder{
+border-left: none;
+border-top-width: 5px;
+border-top-style: solid;
+padding: 5px;
+}
+ 
+/*Pull quotes with dark background*/
+blockquote.et-pullquote.left.dark, blockquote.et-pullquote.right.dark{
+border-left: none;
+padding: 10px;
+background: #333;
+}
+ 
+blockquote.et-pullquote.left.dark p, blockquote.et-pullquote.right.dark p {
+color: #fff;
+}
+ 
+@media all and (min-width: 700px) {
+ 
+blockquote.et-pullquote{
+padding: 0 20px;
+max-width: 300px;
+}
+ 
+/*Pull quote Left*/
+blockquote.et-pullquote.left{
+    float: left;
+    margin: 20px 20px 20px -10%;
+}
+/*Pull quote Right*/
+blockquote.et-pullquote.right{
+    float: right;
+    margin: 20px -10% 20px 20px;
+}
+}
+
+
+/* Post Header Customization from https://www.elegantthemes.com/blog/divi-resources/how-to-add-custom-templates-and-design-to-divis-blog-post-formats-part-2-of-3 */
